@@ -1,0 +1,21 @@
+.title{
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 70px 0 30px;
+  font-family: Garamond, serif;
+}
+.title p{
+  font-family: Garamond, serif;
+}
+
+.title h2{
+  font-weight: 42px;
+  color: black;
+  margin-top: 5px;
+  text-transform: none;
+  font-family: Garamond, serif;
+
+}

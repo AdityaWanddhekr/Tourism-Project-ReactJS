@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav{
+  width: 100%;
+  color: white;
+  padding: 4px 0;
+ position: fixed;
+ top: 0;
+ left: 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 10;
+}
+
+.logo{
+  width: 200px;
+  font-size: 30px;
+  font-family: 'Brush Script MT', cursive;
+}
+
+nav ul li{
+  display: inline;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 20px;
+}
+
+.dark-nav{
+  background-color: blue;
+  transition: 0.5s;
+  height: 80px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+
+}
+
+.menu{
+  display: none;
+}
+/*--------Media Query-------*/
+
+@media (max-width:1260px) {
+  .logo{
+    width: 140px;
+  }
+  nav ul li{
+    margin: 10px 15px;
+  }
+}
+
+@media (max-width:980px) {
+  nav{
+    padding: 15px 0;
+
+  }
+  nav ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    z-index: -1;
+    width:100%;
+    padding-top: 70px;
+    transition: 0.5s;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px 40px;
+  }
+
+  .menu{
+    display: block;
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .mobile-view{
+    top: -420px;
+  }
+}
